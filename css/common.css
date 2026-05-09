@@ -1,40 +1,18 @@
-/* Сбросы стилей, чтобы браузер не добавлял свои отступы */
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+img { display: block; max-width: 100%; height: auto; }
 
-ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
-}
-
-/* ЦЕНТРИРОВАНИЕ КОНТЕНТА */
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* КЛАСС ДЛЯ ВСЕХ СЕКЦИЙ (кроме Hero) */
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-/* СКРЫТИЕ ЭЛЕМЕНТОВ (для заголовков, которых не должно быть видно) */
 .sr-only {
   position: absolute;
   width: 1px;
