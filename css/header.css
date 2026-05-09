@@ -1,15 +1,14 @@
-.header {
-  border-bottom: 1px solid #e7e9fc;
-}
+.header { border-bottom: 1px solid #e7e9fc; }
 
-.header .container {
+.header-container {
   display: flex;
-  align-items: center; /* Выравнивает всё по вертикали */
+  align-items: center;
 }
 
 .header-navigation {
   display: flex;
   align-items: center;
+  flex-grow: 1; /* Дозволяє навігації займати місце, виштовхуючи контакти */
 }
 
 .header-logo {
@@ -20,28 +19,22 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px; /* Отступ от логотипа до навигации */
+  margin-right: 76px;
 }
 
 .header-menu-list {
   display: flex;
-  gap: 40px; /* Расстояние между ссылками */
+  gap: 40px;
 }
 
 .nav-link {
   display: block;
-  padding: 24px 0; /* Создает высоту хедера */
+  padding: 24px 0;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
-.header-contacts {
-  font-style: normal;
-  margin-left: auto; /* Выталкивает контакты в правую часть хедера */
-}
+.header-contacts { font-style: normal; }
 
 .header-contacts-list {
   display: flex;
@@ -49,8 +42,7 @@
 }
 
 .contacts-link {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
+  display: block;
 }
