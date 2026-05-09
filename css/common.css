@@ -1,18 +1,46 @@
-h1, h2, h3, h4, h5, h6, p { margin: 0; }
-ul, ol { margin: 0; padding: 0; list-style: none; }
-img { display: block; max-width: 100%; height: auto; }
+/* Глобальные сбросы (чтобы убрать лишние отступы браузера) */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
 
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- ИСПРАВЛЕНИЯ ДЛЯ BODY --- */
+body {
+  /* 1. Доминирующий шрифт */
+  font-family: "Roboto", sans-serif;
+  /* 2. Базовый цвет текста */
+  color: #434455;
+  /* 3. Базовый цвет фона */
+  background-color: #ffffff;
+}
+
+/* --- УТИЛИТАРНЫЕ КЛАССЫ --- */
+
+/* Контейнер для центрирования контента */
 .container {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+/* Общий класс для секций */
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
+/* Класс для скрытия элементов (Screen Readers only) */
 .sr-only {
   position: absolute;
   width: 1px;
