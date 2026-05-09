@@ -2,18 +2,52 @@
   background-color: #f4f4fd;
 }
 
+/* 1. Вирівнюємо головний заголовок секції по центру */
+/* 2. Додаємо відступ 72px від заголовка до карток */
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
 .team-list {
   display: flex;
-  gap: 24px; /* Отступ между карточками */
+  gap: 24px;
 }
 
+/* 4. Заокруглюємо нижні кути картки (0 зверху, 4px знизу) */
 .team-item {
   background-color: #ffffff;
-  /* 4 карточки в ряду: (100% - 3 отступа по 24px) / 4 */
-  width: calc((100% - 72px) / 4); 
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  /* Рекомендую також додати тінь, зазвичай у цьому макеті вона є */
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+/* 3. Додаємо горизонтальні падінги по 16px */
 .team-card-content {
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
+}
+
+/* 5. Додаємо відступ 8px між ім'ям та професією */
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.team-role {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
