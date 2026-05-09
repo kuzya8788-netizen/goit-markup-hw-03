@@ -35,7 +35,7 @@ body {
 }
 
 /* СКРЫТИЕ ЭЛЕМЕНТОВ (для заголовков, которых не должно быть видно) */
-.visually-hidden {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
