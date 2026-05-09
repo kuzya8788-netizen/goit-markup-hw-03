@@ -1,1 +1,48 @@
+/* Логотип в хедере */
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33; /* Исправлено для точности 24/18 */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none; /* Убирает подчеркивание */
+}
 
+/* Вторая часть логотипа (Studio) */
+.logo-studio-header {
+  color: #2e2f42; /* Тёмный цвет по ТЗ */
+}
+
+/* Ссылка навигации */
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none; /* Убирает подчеркивание */
+}
+
+/* Ховер и фокус для навигации */
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+/* Контакты */
+.contacts-link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none; /* Убирает подчеркивание */
+}
+
+/* Ховер и фокус для контактов */
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
