@@ -1,3 +1,8 @@
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -5,6 +10,25 @@
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item {
+  /* Расчет для 3-х колонок: (100% - 2 отступа по 24px) / 3 */
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none; /* Убираем верхнюю рамку, чтобы она не накладывалась на картинку */
 }
 
 .portfolio-subtitle {
@@ -13,13 +37,7 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-}
-
-.portfolio-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
