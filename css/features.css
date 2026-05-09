@@ -1,24 +1,29 @@
-/* Видаляємо padding */
+/* 5. Используем класс .features для контроля секции (если нужен фон) */
 .features {
   background-color: #ffffff;
 }
 
-/* Повністю очищуємо заголовок від геометричних властивостей */
-.features-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
+/* 1. Делаем список флекс-контейнером (карточки станут в ряд) */
+/* 2. Добавляем горизонтальный отступ 24px между карточками */
+.features-list {
+  display: flex;
+  gap: 24px;
 }
 
+/* 3. Контроль ширины: 4 карточки в ряду */
+/* Формула: (100% ширины - 3 промежутка по 24px) / 4 карточки */
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
+
+/* 4. Вертикальный отступ 8px между заголовком и текстом */
 .features-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-text {
