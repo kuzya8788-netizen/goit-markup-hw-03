@@ -1,37 +1,64 @@
 .hero {
   background-color: #2e2f42;
+  /* 1. Вертикальні падінги по 188px */
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+  text-align: center; /* Центрує контент всередині */
+  
+  /* --- ВИПРАВЛЕННЯ ЗАУВАЖЕННЯ №1 --- */
+  /* Прибираємо обмеження по ширині, щоб секція була на весь екран */
+  /* max-width: 1440px; <- ВИДАЛЕНО */
+  /* margin: 0 auto; <- ВИДАЛЕНО */
+  
+  /* Зазвичай тут додається фонова картинка, як у попередньому модулі: */
+  /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  max-width: 1440px;
-  margin: 0 auto;
+  background-size: cover; */
 }
 
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  /* 2. Максимальна ширина та центрування */
   max-width: 496px;
-  margin: 0 auto 48px auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* 3. Відступ знизу 48px */
+  margin-bottom: 48px;
 }
 
 .order-btn {
+  /* 4. Центрування кнопки (як блочний елемент) */
   display: block;
   margin: 0 auto;
   min-width: 169px;
-  height: 56px;
+  
+  /* --- ВИПРАВЛЕННЯ ЗАУВАЖЕННЯ №2 --- */
+  /* Прибираємо фіксовану висоту */
+  /* height: 56px; <- ВИДАЛЕНО */
+  
   border: none;
   background-color: #4d5ae5;
   color: #ffffff;
+  cursor: pointer;
+  
+  /* 5. Внутрішні відступи. */
+  /* Збільшуємо вертикальний падінг, щоб компенсувати видалену висоту */
+  padding: 16px 32px;
+  
+  /* 6. Заокруглення кутів */
+  border-radius: 4px;
+  
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
-  padding: 16px 32px;
-  border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: #404bbf;
 }
