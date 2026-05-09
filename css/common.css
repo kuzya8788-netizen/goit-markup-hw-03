@@ -1,35 +1,41 @@
-/* Базові стилі для всього документа */
+/* Сбросы стилей, чтобы браузер не добавлял свои отступы */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
   background-color: #ffffff;
 }
 
-/* Скидання стилів для списків */
-ul,
-ol {
-  list-style-type: none;
-  /* margin та padding видалені, щоб не порушувати заборону на геометрію */
-}
-
-/* Скидання стилів для посилань */
-a {
-  text-decoration: none;
-}
-
-/* Стилізація зображень */
-img {
-  display: block;
-}
-
-/* Клас .container залишаємо без жодних властивостей */
+/* ЦЕНТРИРОВАНИЕ КОНТЕНТА */
 .container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-visually-hidden {
+/* КЛАСС ДЛЯ ВСЕХ СЕКЦИЙ (кроме Hero) */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* СКРЫТИЕ ЭЛЕМЕНТОВ (для заголовков, которых не должно быть видно) */
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
