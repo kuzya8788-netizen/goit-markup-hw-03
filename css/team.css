@@ -1,1 +1,40 @@
+.team {
+  background-color: #f4f4fd;
+}
 
+.team-title {
+  /* Задаємо жирність 700 явно */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  /* Видаляємо text-transform та всі margin/padding */
+}
+
+.team-item {
+  background-color: #ffffff;
+  /* Видаляємо width, margin, shadow та border-radius */
+}
+
+.team-name {
+  /* Точні налаштування для імен (h3) */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.team-role {
+  /* Точні налаштування для професій (p) */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-align: center;
+}
+
+/* Видаляємо .team-card-content, якщо там були тільки відступи */
