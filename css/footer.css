@@ -1,31 +1,28 @@
-/* 1. Фоновий колір футера */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
-/* 2. Стилі для логотипа у футері */
 .footer-logo {
+  display: inline-block; /* Позволяет применять отступы к ссылке-логотипу */
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.33; /* Встановлено 1.33 (що відповідає 24px) */
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  text-decoration: none;
 }
 
-/* 3. Колір другої частини логотипа (Studio) */
 .logo-studio-footer {
   color: #f4f4fd;
 }
 
-/* 4. Стилі для тексту параграфа у футері */
 .footer-text {
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-
-/* ГЕОМЕТРІЯ (width, margin, padding) ВИДАЛЕНА ЗГІДНО З ВИМОГАМИ */
