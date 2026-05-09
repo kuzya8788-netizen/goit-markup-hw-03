@@ -1,1 +1,30 @@
+/* Базові стилі для всього документа */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  background-color: #ffffff;
+}
 
+/* Скидання стилів для списків */
+ul,
+ol {
+  list-style-type: none;
+  /* margin та padding видалені, щоб не порушувати заборону на геометрію */
+}
+
+/* Скидання стилів для посилань */
+a {
+  text-decoration: none;
+}
+
+/* Стилізація зображень */
+img {
+  display: block;
+}
+
+/* Клас .container залишаємо без жодних властивостей */
+.container {
+}
